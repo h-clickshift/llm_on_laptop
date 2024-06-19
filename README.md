@@ -1,4 +1,4 @@
-# I think I can do something about LLM ~10B with my laptop :sunglasses::sunglasses::sunglasses:
+# I think I can do something about LLMs ~10B with my laptop :sunglasses::sunglasses::sunglasses:
 ## system
 * Apple M2 Pro
 * memsize: 32GB
@@ -32,7 +32,8 @@
     
     **## Time Cost on mps##**
     
-    doing
+    >** time cost:**11234.172160863876s** **  speedup by 15.6% ⬆️  😃   
+    >** time per token: 0.00890141245550489 **
     
     
     
