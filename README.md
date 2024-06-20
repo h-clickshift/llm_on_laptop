@@ -10,11 +10,12 @@
   
   | model       |mem consume   | bare run on CPU | bare run on MPS 
   | ------------|------------- | --------------- |-----------------|
-  | chatglm3-6b | 18GB(float16)         | 13s  🥇      |   21.8s   |
-  | gemma-7b    | 34GB(float32)         | 13321s  🚑     | 11234s     |
+  | Phi-3-mini-128k-instruct(3.8B) | 23GB         | 5s  🥇      |  **70s** |
+  | chatglm3-6b | 18GB(float16)         | 13s  🥈     |   21.8s   |
+  | gemma-7b    | 34GB(float32)         | 13321s  🚑     | 11234s 🚑     |
   | Mistral-7B-v0.3    | 28GB(float32)         |  never try      | 15275s 🚑     |
 
-  * [**gemma_7b**](https://huggingface.co/google/gemma-7b), with `python gemma_7b.py`  
+  * [**gemma_7b**](https://huggingface.co/google/gemma-7b), with `python main.py`  
     **##Prompt##**  
     >HI,I am a language model.
      
@@ -76,6 +77,17 @@
       >A language model is a mathematical representation of a language. It is used to predict the next word in a sentence, given the previous words. Language models are used in many applications, such as speech recognition, machine translation,
   
       ![image](https://github.com/h-clickshift/llm_on_laptop/assets/117718271/d044da2f-b38b-46a0-a31d-01122a9f49bf)
+  * [Phi-3-mini-128k-instruct](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct)  
+    **##Prompt##**  
+    >HI,I am a language model.
+    
+    **##Response##**  
+    >How can I assist you today?    
+    * mps
+    ![image](https://github.com/h-clickshift/llm_on_laptop/assets/117718271/24048324-6a58-40ff-9f4d-30ccbf55b92b)
+ 
+    * cpu
+    ![image](https://github.com/h-clickshift/llm_on_laptop/assets/117718271/12dfa097-c2e6-42f9-9e59-9ed959b58ea3)
 
 * Train a GPT-2 with private token and dataset(eg. py code model)
 * 
