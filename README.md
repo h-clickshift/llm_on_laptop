@@ -10,8 +10,9 @@
   
   | model       |mem consume   | bare run on CPU | bare run on MPS 
   | ------------|------------- | --------------- |-----------------|
-  | chatglm3-6b | 18GB(float16)         | 13s  🥇        |   21.8s         |
-    | gemma-7b    | 34GB(float32)         | 13321s  🚑     | 11234s     |
+  | chatglm3-6b | 18GB(float16)         | 13s  🥇      |   21.8s   |
+  | gemma-7b    | 34GB(float32)         | 13321s  🚑     | 11234s     |
+  | Mistral-7B-v0.3    | 28GB(float32)         |  never try      | 15275s 🚑     |
 
   * [**gemma_7b**](https://huggingface.co/google/gemma-7b), with `python gemma_7b.py`  
     **##Prompt##**  
@@ -47,22 +48,34 @@
 
   * [chatglm3-6b](https://huggingface.co/THUDM/chatglm3-6b)  
      **##Prompt##**  
-    >HI,I am a language model.
+      >HI,I am a language model.
      
-    **##Response##**  
-    >I am here to assist you with any questions you may have. How can I help you today?
+      **##Response##**  
+      >I am here to assist you with any questions you may have. How can I help you today?
     
-    **## Time Cost on MPS ##**
+      **## Time Cost on MPS ##**
     
-   >** time cost:13.22354507446289s **  ⏫ 😸  
-   >** time per token: 2.419925959325228 **  
+     >** time cost:13.22354507446289s **  ⏫ 😸  
+     >** time per token: 2.419925959325228 **  
    
-   ![image](https://github.com/h-clickshift/llm_on_laptop/assets/117718271/2d1d585e-28a6-495f-8570-b731373a8a0d)
-
-   **## Time Cost on CPU ##**  
-   change model dtype to float32 with `model.to(device, dtype=torch.float32)`  
-  > ** time cost:21.84215497970581s **  33.3% ↘️ 🎱  
-  > ** time per token: 1.465056906231649 **  
+     ![image](https://github.com/h-clickshift/llm_on_laptop/assets/117718271/2d1d585e-28a6-495f-8570-b731373a8a0d)
   
+     **## Time Cost on CPU ##**  
+     change model dtype to float32 with `model.to(device, dtype=torch.float32)`  
+      > ** time cost:21.84215497970581s **  33.3% ↘️ 🎱  
+      > ** time per token: 1.465056906231649 **  
+
+   * [Mistral-7B-v0.3](https://huggingface.co/mistralai/Mistral-7B-v0.3)
+
+      **##Prompt##**  
+      >HI,I am a language model.
+       
+      **##Response##**
+      >I am here to help you with your writing. I can help you with grammar, spelling, and punctuation. I can also help you with your vocabulary.
+      >\#\# What is a language model?
+      >A language model is a mathematical representation of a language. It is used to predict the next word in a sentence, given the previous words. Language models are used in many applications, such as speech recognition, machine translation,
+  
+      ![image](https://github.com/h-clickshift/llm_on_laptop/assets/117718271/d044da2f-b38b-46a0-a31d-01122a9f49bf)
+
 * Train a GPT-2 with private token and dataset(eg. py code model)
 * 
