@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # 设置后端为TkAgg,以便在新线程中更新图形
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import psutil
 import subprocess
@@ -22,7 +22,7 @@ def get_res_usage(pid):
         mem_usages.append(mem_usage)
         yield [cpu_usage, mem_usage]
 
-def update_plot(pid):
+def update_plot(pid, model):
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), gridspec_kw={'hspace': 0.5})
     cpu_usages = []
     mem_usages = []
@@ -35,7 +35,7 @@ def update_plot(pid):
 
     mem = []
     line2, = ax2.plot(mem, cpu_usages)
-    ax2.set_ylim(0, 40)
+    ax2.set_ylim(0, 50)
     ax2.set_xlabel('Time')
     ax2.set_ylabel('Mem Usage (GB)')
     ax2.set_title('Dynamic Mem Usage Plot')
@@ -57,5 +57,7 @@ def update_plot(pid):
             ax2.autoscale_view(True, True, True)
             fig.canvas.draw()
             fig.canvas.flush_events()
+            # save img
+            plt.savefig(f"{model.split('/')[-1]}.png")
         except queue.Empty:
             pass
