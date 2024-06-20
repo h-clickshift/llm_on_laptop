@@ -1,4 +1,4 @@
-# Mistral-7B-v0.3 🐢🐢🐢  🐢🐢 🐢
+# Mistral-7B-v0.3  🐌 🐌🐌 🐌🐌🐌 🐌🐌🐌🐌
 | Model       |MEM consume   | Dtype           | Device         |Time Cost(s) |Prompt  |Response|  
 | ------------|------------- | --------------- |-----------------|--|--|--|
 | Mistral-7B-v0.3    | 28GB  |    float32   |mps| 15275s  | HI,I am a language model.     | I am here to help you with your writing. I can help you with grammar, spelling, and punctuation. I can also help you with your vocabulary.<br>\#\# What is a language model?<br>A language model is a mathematical representation of a language. It is used to predict the next word in a sentence, given the previous words. Language models are used in many applications, such as speech recognition, machine translation,
