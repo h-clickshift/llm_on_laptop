@@ -12,8 +12,8 @@
   | ------------|------------- | --------------- |-----------------|
   | Phi-3-mini-128k-instruct(3.8B) | 23GB         | 5s  🥇      |  **70s** |
   | chatglm3-6b | 18GB(float16)         | 13s  🥈     |   21.8s   |
-  | gemma-7b    | 34GB(float32)         | 13321s  🚑     | 11234s 🚑     |
-  | Mistral-7B-v0.3    | 28GB(float32)         |  never try      | 15275s 🚑     |
+  | gemma-7b    | 34GB(float32)         | 13321s  🐢     | 11234s 🐢     |
+  | Mistral-7B-v0.3    | 28GB(float32)         |  never try      | 15275s 🐌     |
 
   * [gemma_7b](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/gemma_7b.md)
   * [chatglm-b6](https://github.com/h-clickshift/llm_on_laptop/edit/main/x/chatglm3-6b.md)
