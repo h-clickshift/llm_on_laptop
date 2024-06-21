@@ -14,11 +14,13 @@
   | chatglm3-6b | 18GB(float16)         | 13s  🥈     |   21.8s   |
   | gemma-7b    | 34GB(float32)         | 13321s  🐢     | 11234s 🐢     |
   | Mistral-7B-v0.3    | 28GB(float32)         |  never try      | 15275s 🐌     |
+  | Yi-1.5-9B-Chat    | 34GB(float32)         |   76723s 🐌    | never try     |
 
   * [gemma_7b](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/gemma_7b.md)
   * [chatglm-b6](https://github.com/h-clickshift/llm_on_laptop/edit/main/x/chatglm3-6b.md)
   * [Mistral-7B-v0.3](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/Mistral-7B-v0.3.md)
   * [hi-3-mini-128k-instruct](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/Phi-3-mini-128k-instruct.md)
+  * [Yi-1.5-9B-Chat](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/Yi-1.5-9B-Chat.md)
 
 * Train a GPT-2 with private token and dataset(eg. py code model)
 * 
