@@ -12,6 +12,7 @@
   | ------------|------------- | --------------- |-----------------|
   | Phi-3-mini-128k-instruct(3.8B) | 23GB         | 5s  🥇      |  **70s** |
   | chatglm3-6b | 18GB(float16)         | 13s  🥈     |   21.8s   |
+  | Qwen/Qwen2-7B-Instruct | 32GB(float32)         |  never try      | 4642s 🐢     |
   | gemma-7b    | 34GB(float32)         | 13321s  🐢     | 11234s 🐢     |
   | Mistral-7B-v0.3    | 28GB(float32)         |  never try      | 15275s 🐌     |
   | Yi-1.5-9B-Chat    | 34GB(float32)         |   76723s 🐌    | never try     |
