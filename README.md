@@ -23,5 +23,15 @@
   * [hi-3-mini-128k-instruct](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/Phi-3-mini-128k-instruct.md)
   * [Yi-1.5-9B-Chat](https://github.com/h-clickshift/llm_on_laptop/blob/main/x/Yi-1.5-9B-Chat.md)
 
-* Train a GPT-2 with private token and dataset(eg. py code model)
-* 
+* Speedup as well as evaluate the default Top1 model with some tiny tricks
+  * low bits quantization ?
+  * kv cache ? mem is crying 😢
+  * run with cpp ?
+  * benefit from onnx like ?
+  * mps flash attention ? 🏋️
+* Train a GPT-2 with very customized design for tokenizer and dataset(eg. py code model)
+  * Design a tokenizer for py code, gpt-4.0's could be the choice.
+  * Scraping python code on web 👉 Dataset
+  * Train the model on mps ~ run till the pc die(not mine anyway)
+  * Evaluate the model
+  * Open-source...
